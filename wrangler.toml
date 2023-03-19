@@ -1,3 +1,12 @@
-kv_namespaces = [
-  { binding = "SAITAMAJS_KV", preview_id = "d66ea0bd399342cd995a40eb2a3727ef", id = "4657d1c6a8e14c45a7695f09d89c9364" }
-]
+name = "my-first-edge-demo-site"
+
+[[kv_namespaces]]
+binding = "SAITAMAJS_KV"
+preview_id = "d66ea0bd399342cd995a40eb2a3727ef"
+id = "4657d1c6a8e14c45a7695f09d89c9364"
+
+[vars]
+ORIGIN_HOST = "localhost"
+
+[env.production.vars]
+ORIGIN_HOST = "*.saitamajs.pages.dev"

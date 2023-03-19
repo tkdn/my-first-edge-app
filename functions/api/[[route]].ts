@@ -1,22 +1,18 @@
 import { Hono } from "hono";
+import { cors } from "hono/cors";
 import { handle } from "hono/cloudflare-pages";
 import { KVNamespace } from "@cloudflare/workers-types";
+import { counter } from "./handlers/counter";
 
-type Env = {
+export type Env = {
   Bindings: {
     SAITAMAJS_KV: KVNamespace;
+    ORIGIN_HOST: string;
   };
 };
 
 const app = new Hono<Env>();
-
-app.get("/api/counter", async (c) => {
-  const visited = await c.env.SAITAMAJS_KV.get("counter");
-  const count = Number(visited) + 1;
-  await c.env.SAITAMAJS_KV.put("counter", count.toString());
-  return c.json({
-    counter: count,
-  });
-});
+app.use('*', cors({ origin: "*.saitamajs.pages.dev" }));
+app.get("/api/counter", counter);
 
 export const onRequest = handle(app);
