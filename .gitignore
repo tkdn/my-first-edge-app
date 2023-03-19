@@ -103,3 +103,5 @@ pages
 
 # TernJS port file
 .tern-port
+
+.dev.vars
