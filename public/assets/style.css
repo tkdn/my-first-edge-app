@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-image: url(./assets/bg_body.png);
+  background-image: url(./bg_body.png);
 }
 h1 {
   -webkit-background-clip: text;
@@ -27,34 +27,34 @@ h1 span {
   text-indent: -9999em;
 }
 .count-0 {
-  background-image: url(./assets/0.gif);
+  background-image: url(./0.gif);
 }
 .count-1 {
-  background-image: url(./assets/1.gif);
+  background-image: url(./1.gif);
 }
 .count-2 {
-  background-image: url(./assets/2.gif);
+  background-image: url(./2.gif);
 }
 .count-3 {
-  background-image: url(./assets/3.gif);
+  background-image: url(./3.gif);
 }
 .count-4 {
-  background-image: url(./assets/4.gif);
+  background-image: url(./4.gif);
 }
 .count-5 {
-  background-image: url(./assets/5.gif);
+  background-image: url(./5.gif);
 }
 .count-6 {
-  background-image: url(./assets/6.gif);
+  background-image: url(./6.gif);
 }
 .count-7 {
-  background-image: url(./assets/7.gif);
+  background-image: url(./7.gif);
 }
 .count-8 {
-  background-image: url(./assets/7.gif);
+  background-image: url(./7.gif);
 }
 .count-9 {
-  background-image: url(./assets/7.gif);
+  background-image: url(./7.gif);
 }
 .message {
   width: 70vw;
