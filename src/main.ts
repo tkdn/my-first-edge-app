@@ -1,8 +1,7 @@
 import "./style.css";
+import { counterApp } from "./lib/counter";
+import { bbsApp, messageApp } from "./lib/bbs";
 
 (async () => {
-  const res = await fetch("/api/counter");
-  const { counter } = await res.json();
-  const $app = document.getElementById("app");
-  $app!.innerHTML = counter;
+  await Promise.allSettled([counterApp(), bbsApp(), messageApp()])
 })();

@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  background-image: url(./assets/bg_body.png);
+}
+h1 {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#ade4c4, #0a8036);
+  font-style: italic;
+}
+h1 span {
+  display: block;
+}
+.counter-container {
+  width: 20em;
+  margin: 1em auto;
+  border: 4px inset #ddd;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+.counter-container #counter span {
+  display: inline-block;
+  overflow: hidden;
+  width: 16px;
+  height: 23px;
+  text-indent: -9999em;
+}
+.count-0 {
+  background-image: url(./assets/0.gif);
+}
+.count-1 {
+  background-image: url(./assets/1.gif);
+}
+.count-2 {
+  background-image: url(./assets/2.gif);
+}
+.count-3 {
+  background-image: url(./assets/3.gif);
+}
+.count-4 {
+  background-image: url(./assets/4.gif);
+}
+.count-5 {
+  background-image: url(./assets/5.gif);
+}
+.count-6 {
+  background-image: url(./assets/6.gif);
+}
+.count-7 {
+  background-image: url(./assets/7.gif);
+}
+.count-8 {
+  background-image: url(./assets/7.gif);
+}
+.count-9 {
+  background-image: url(./assets/7.gif);
+}
+.message {
+  width: 70vw;
+  margin: 1em auto;
+  padding: 6px;
+  text-align: left;
+  background-color: #fff;
+  border: 4px inset #267c46;
+}

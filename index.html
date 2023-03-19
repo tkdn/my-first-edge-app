@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saitamajs demo page</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saitamajs demo page</title>
+</head>
+
+<body>
+  <main>
+    <h1><span>ようこそ！</span><span>Saitamajsのホームページへ！</span></h1>
+    <p class="counter-container">あなたは<span id="counter"></span>番目のお客様です</p>
+    <marquee>訪問されたらカキコお願いします</marquee>
+    <h2>掲示板</h2>
+    <form id="bss">
+      <textarea cols="40" rows="3" name="message"></textarea>
+      <div>
+        <input type="submit" name="送信">
+      </div>
+    </form>
+    <div class="message">
+      <ul id="message-list"></ul>
+    </div>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
