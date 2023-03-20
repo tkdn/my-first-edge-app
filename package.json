@@ -17,6 +17,7 @@
     "wrangler": "^2.12.2"
   },
   "dependencies": {
-    "hono": "^3.0.3"
+    "hono": "^3.0.3",
+    "striptags": "^3.2.0"
   }
 }

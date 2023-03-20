@@ -18,7 +18,7 @@ export async function bbsApp() {
 }
 
 export async function messageApp() {
-  const $form = document.getElementById("bss");
+  const $form = document.getElementById("bbs");
   const $textarea = $form?.querySelector("textarea");
   const $button = $form?.querySelector<HTMLInputElement>("input[type=submit]");
 
@@ -26,12 +26,15 @@ export async function messageApp() {
     event.preventDefault();
     $button!.disabled = true;
 
-    await fetch("/api/message", {
+    const res = await fetch("/api/message", {
       method: "POST",
       body: JSON.stringify({
         message: $textarea?.value,
       }),
     });
+    if (res.status) {
+      alert("その入力はダメです〜〜");
+    }
 
     await bbsApp();
 
