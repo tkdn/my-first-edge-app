@@ -5,7 +5,7 @@ export async function counterApp() {
   const res = await fetch("/api/counter");
   const { counter } = await res.json();
   const visitCount = (counter as number).toString();
-  const displayCount = visitCount.padStart(6, '0');
+  const displayCount = visitCount.padStart(6, "0");
 
   displayCount.split("").forEach((count) => {
     const $span = document.createElement("span");

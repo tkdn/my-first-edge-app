@@ -8,4 +8,4 @@ export const counter: Handler<Env, "/api/counter"> = async (c) => {
   return c.json({
     counter: count,
   });
-}
+};

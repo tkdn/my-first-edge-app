@@ -14,7 +14,7 @@ export type Env = {
 };
 
 const app = new Hono<Env>();
-app.use('*', cors({ origin: (origin) => origin }));
+app.use("*", cors({ origin: (origin) => origin }));
 app.get("/api/counter", counter);
 app.get("/api/message", getMessage);
 app.post("/api/message", createMessage);
