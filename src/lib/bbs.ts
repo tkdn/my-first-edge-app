@@ -32,7 +32,7 @@ export async function messageApp() {
         message: $textarea?.value,
       }),
     });
-    if (res.status) {
+    if (res.status === 400) {
       alert("その入力はダメです〜〜");
     }
 
